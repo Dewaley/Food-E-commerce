@@ -83,10 +83,15 @@ header {
 .cart {
   font-size: 2rem;
   color: white;
+  width: 4rem;
+  height: 4rem;
   border: 1px solid #4fb68d;
   padding: 1rem;
   border-radius: 50%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cart .fas {
   color: white;
@@ -151,6 +156,7 @@ header {
   background-size: cover;
   height: 70vh;
   position: relative;
+  margin-bottom: 1rem;
 }
 .offer {
   position: absolute;
