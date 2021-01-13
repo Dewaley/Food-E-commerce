@@ -2,208 +2,256 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 * {
- box-sizing: border-box;
- padding: 0;
- margin: 0;
- color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 html {
- font-size: 10px;
+  font-size: 10px;
 }
 body {
- overflow-x: hidden;
- font-family: 'Comfortaa', cursive;
- position: relative;
- background-color: #2b2e35;
+  overflow-x: hidden;
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  background-color: #2b2e35;
 }
 header {
- background-color: #2b2e35;
- opacity: 0.7;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 1rem;
- position: fixed;
- top: 0;
- left: 0;
- right: 0;
- z-index: 4;
+  background-color: #2b2e35;
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
 }
 .logo {
- font-family: 'Hachi Maru Pop', cursive;
- font-size: 2rem;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 2rem;
 }
 .links {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .links a {
- font-size: 1.5rem;
- text-transform: uppercase;
- margin: 0 1rem;
- text-decoration: none;
- color: #5cbc96;
- border-bottom: 1px solid transparent;
- transition: ease 400ms;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #5cbc96;
+  border-bottom: 1px solid transparent;
+  transition: ease 400ms;
 }
 .links a:hover {
- border-bottom: 1px solid #4fb68d;
- transition: ease 400ms;
+  border-bottom: 1px solid #4fb68d;
+  transition: ease 400ms;
 }
 .search {
- border: 1px solid #4fb68d;
- border-radius: 3rem;
- padding: 1rem;
+  border: 1px solid #4fb68d;
+  border-radius: 3rem;
+  padding: 1rem;
 }
 .search input {
- font-size: 1.5rem;
- border: none;
- outline: none;
- background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 .search .fas {
- font-size: 1.5rem;
- cursor: pointer;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 .carttemplate {
- display: flex;
- justify-content: center;
- align-items: center;
- cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .mycart {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 .mycart .money {
- color: #4fb68d;
+  color: #4fb68d;
 }
 .cart {
- font-size: 2rem;
- color: white;
- border: 1px solid #4fb68d;
- padding: 1rem;
- border-radius: 50%;
- position: relative;
+  font-size: 2rem;
+  color: white;
+  border: 1px solid #4fb68d;
+  padding: 1rem;
+  border-radius: 50%;
+  position: relative;
 }
 .cart .fas {
- color: white;
+  color: white;
 }
 .countcart {
- position: absolute;
- right: 0;
- top: 2%;
- font-size: 1rem;
- min-width: 1.2rem;
- max-width: 1.2rem;
- min-height: 1.2rem;
- max-height: 1.2rem;
- padding: .25rem;
- background-color: #4fb68d;
- display: flex;
- justify-content: center;
- align-items: center;
- border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 2%;
+  font-size: 1rem;
+  min-width: 1.2rem;
+  max-width: 1.2rem;
+  min-height: 1.2rem;
+  max-height: 1.2rem;
+  padding: 0.25rem;
+  background-color: #4fb68d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 .side-options {
- position: fixed;
- left: 0;
- top: 50%;
- transform: translateY(-50%);
- z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
 }
 .side-options li {
- margin: 0;
- list-style-type: none;
- font-size: 2rem;
- display: flex;
+  margin: 0;
+  list-style-type: none;
+  font-size: 2rem;
+  display: flex;
 }
 .side-options div {
- display: flex;
- cursor: pointer;
- color: white;
- justify-content: center;
- align-items: center;
- min-width: 4rem;
- max-width: 4rem;
- min-height: 4rem;
- max-height: 4rem;
- background-color: #4fb68d;
+  display: flex;
+  cursor: pointer;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  min-width: 4rem;
+  max-width: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  background-color: #4fb68d;
 }
 .side-options span {
- display: none;
- background-color: #5cbc96;
- min-height: 4rem;
- max-height: 4rem;
- justify-content: center;
- align-items: center;
- padding: 0 1rem;
+  display: none;
+  background-color: #5cbc96;
+  min-height: 4rem;
+  max-height: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
 }
 .side-options li:hover span {
- display: flex;
+  display: flex;
 }
 .banner {
- background-image: url('6-63195_food-wallpaper-foods-wallpaper-hd.jpeg');
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- height: 70vh;
- position: relative;
+  background-image: url('6-63195_food-wallpaper-foods-wallpaper-hd.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
 }
 .offer {
- position: absolute;
- bottom: 10vw;
- right: 3rem;
- width: 50vw;
- text-align: center;
+  position: absolute;
+  bottom: 10vw;
+  right: 3rem;
+  width: 50vw;
+  text-align: center;
 }
 .offer h3 {
- font-size: 3rem;
- font-family: 'Hachi Maru Pop', cursive;
+  font-size: 3rem;
+  font-family: 'Hachi Maru Pop', cursive;
 }
 .offer p {
- font-size: 2rem;
- margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 .offer button {
- cursor: pointer;
- border: 2px solid #5cbc96;
- outline: none;
- background-color: transparent;
- font-size: 1.5rem;
- padding: .5rem;
- border-radius: 1rem;
- transition: ease 400ms;
+  cursor: pointer;
+  border: 2px solid #5cbc96;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  transition: ease 400ms;
 }
 .offer button:hover {
+  transition: ease 400ms;
+  border: 2px solid white;
+  background-color: white;
+  color: #5cbc96;
+}
+.new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new h3 {
+  font-size: 2rem;
+  font-family: 'Hachi Maru Pop', cursive;
+  padding: 0 2rem .25rem;
+  border-bottom: 1px solid #5cbc96;
+}
+h3 .fa-stopwatch {
+ color: #4fb68d;
+}
+.selection {
+ font-size: 1.25rem;
+ margin: 2rem;
+}
+.selection span {
+ margin: 0 1rem;
+ text-transform: capitalize;
+ cursor: pointer;
  transition: ease 400ms;
- border: 2px solid white;
- background-color: white;
- color: #5cbc96;
 }
-@media (max-width:850px) {
- .links a {
-  font-size: 1.2rem;
- }
- .search {
-  font-size: 1.2rem;
- }
- .carttemplate {
-  display: none;
- }
+.selection span:hover {
+ color: #4fb68d;
+ transition: ease 400ms;
 }
-@media (max-width: 768px){
- .logo {
-  font-size: 1.75rem
- }
+.selection .active {
+ border: 1px dashed #4fb68d;
+ padding: 1rem;
+ border-radius: 1.5rem;
+ color: #4fb68d;
 }
-@media (max-width:650px) {
- .links {
-  display: none;
- }
-} 
+@media (max-width: 850px) {
+  .links a {
+    font-size: 1.2rem;
+  }
+  .search {
+    font-size: 1.2rem;
+  }
+  .carttemplate {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 650px) {
+  .links {
+    display: none;
+  }
+  .banner {
+    height: 40rem;
+  }
+  .offer {
+    width: 60vw;
+  }
+  .offer h3 {
+    font-size: 2rem;
+  }
+  .offer p {
+    font-size: 1.25rem;
+  }
+}
