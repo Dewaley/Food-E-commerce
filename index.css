@@ -236,12 +236,12 @@ h3 .fa-stopwatch {
 .container {
   position: relative;
   cursor: pointer;
-  height: 37rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
 }
 .action {
-  height: 27rem;
+  height: 20rem;
   background-image: url('1-300x300.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ h3 .fa-stopwatch {
 }
 .name span,
 .name i {
-  color: #2b2e35;
+  color: white;
 }
 .rating {
   padding: 1rem;
@@ -347,13 +347,13 @@ h3 .fa-stopwatch {
   .carttemplate {
     display: none;
   }
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media (max-width: 768px) {
   .logo {
     font-size: 1.75rem;
-  }
-  .products {
-    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 650px) {
