@@ -293,6 +293,35 @@ h3 .fa-stopwatch {
   color: #4fb68d;
   padding: 1rem;
 }
+.comprehensive {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ background-image: url('6-63195_food-wallpaper-foods-wallpaper-hd.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  height: 40rem;
+}
+.store {
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+}
+.store h2 {
+ font-size: 3rem;
+ font-family: 'Hachi Maru Pop', cursive;
+ margin-bottom: 1rem;
+}
+.store-connect {
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ font-size: 2rem;
+}
+.store-connect div {
+ display: flex;
+}
 @media (max-width: 850px) {
   .links a {
     font-size: 1.2rem;
