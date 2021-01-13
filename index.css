@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,9 +11,8 @@ html {
 }
 body {
   overflow-x: hidden;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
-  background-color: #2b2e35;
 }
 header {
   background-color: #2b2e35;
@@ -30,7 +28,7 @@ header {
   z-index: 4;
 }
 .logo {
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
 }
 .links {
@@ -163,7 +161,7 @@ header {
 }
 .offer h3 {
   font-size: 3rem;
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 .offer p {
   font-size: 2rem;
@@ -194,9 +192,9 @@ header {
   margin-bottom: 1.5rem;
 }
 .new h3 {
-  color: white;
+  color: #2b2e35;
   font-size: 2rem;
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Open Sans', sans-serif;
   padding: 0 2rem 0.25rem;
   border-bottom: 1px solid #5cbc96;
   margin-bottom: 1rem;
@@ -213,7 +211,7 @@ h3 .fa-stopwatch {
   text-transform: capitalize;
   cursor: pointer;
   transition: ease 400ms;
-  color: white;
+  color: #2b2e35;
 }
 .selection span:hover {
   color: #4fb68d;
@@ -236,9 +234,9 @@ h3 .fa-stopwatch {
 .container {
   position: relative;
   cursor: pointer;
-  height: 30rem;
   display: flex;
   flex-direction: column;
+  border: 1px solid #4fb68d;
 }
 .action {
   height: 20rem;
@@ -279,21 +277,21 @@ h3 .fa-stopwatch {
 .name {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .name span,
 .name i {
-  color: white;
+  color: #2b2e35;
 }
 .rating {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 .rating .fa-star {
   color: black;
 }
 .price {
   color: #4fb68d;
-  padding: 1rem;
+  padding: 0 1rem .5rem;
 }
 .comprehensive {
   display: grid;
@@ -312,7 +310,7 @@ h3 .fa-stopwatch {
 }
 .comprehensive h2 {
   font-size: 3rem;
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 1rem;
 }
 .comprehensive li {
