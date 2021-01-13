@@ -321,6 +321,7 @@ h3 .fa-stopwatch {
 }
 .comprehensive li {
   list-style: none;
+  cursor: pointer;
 }
 .comprehensive ul {
   display: flex;
