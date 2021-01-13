@@ -214,7 +214,7 @@ h3 .fa-stopwatch {
   color: #2b2e35;
 }
 .selection span:hover {
-  color: #4fb68d; Meat $45.00 
+  color: #4fb68d;
   transition: ease 400ms;
 }
 .selection .active {
@@ -260,7 +260,7 @@ h3 .fa-stopwatch {
   color: #4fb68d;
   background-color: #fff;
   border-radius: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   display: none;
   transition: ease 400ms;
 }
@@ -284,43 +284,54 @@ h3 .fa-stopwatch {
   color: #2b2e35;
 }
 .rating {
- padding: 1rem;
+  padding: 1rem;
 }
-.rating .fa-star{
- color: black;
+.rating .fa-star {
+  color: black;
 }
 .price {
   color: #4fb68d;
   padding: 1rem;
 }
 .comprehensive {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- background-image: url('6-63195_food-wallpaper-foods-wallpaper-hd.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #2b2e35;
   padding: 4rem;
-  height: 40rem;
+  font-size: 2rem;
 }
 .store {
- display: flex;
- flex-direction: column;
- text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
-.store h2 {
- font-size: 3rem;
- font-family: 'Hachi Maru Pop', cursive;
- margin-bottom: 1rem;
+.comprehensive h2 {
+  font-size: 3rem;
+  font-family: 'Hachi Maru Pop', cursive;
+  margin-bottom: 1rem;
+}
+.comprehensive li {
+  list-style: none;
+}
+.comprehensive ul {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+.comprehensive i {
+  padding-right: 0.75rem;
 }
 .store-connect {
- display: flex;
- flex-direction: column;
- text-align: left;
- font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 2rem;
 }
-.store-connect div {
- display: flex;
+.store-connect div,
+.store-connect a {
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 1rem;
 }
 @media (max-width: 850px) {
   .links a {
@@ -361,13 +372,13 @@ h3 .fa-stopwatch {
     grid-template-columns: 1fr;
   }
   .selection span {
-   font-size: .8rem;
-   margin: .15rem;
+    font-size: 0.8rem;
+    margin: 0.15rem;
   }
   .selection .active {
-  border: 1px dashed #4fb68d;
-  padding: .5rem;
-  border-radius: 1.5rem;
-  color: #4fb68d;
-}
+    border: 1px dashed #4fb68d;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    color: #4fb68d;
+  }
 }
