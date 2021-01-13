@@ -14,7 +14,6 @@ body {
   overflow-x: hidden;
   font-family: 'Comfortaa', cursive;
   position: relative;
-  background-color: #2b2e35;
 }
 header {
   background-color: #2b2e35;
@@ -148,7 +147,6 @@ header {
 }
 .banner {
   background-image: url('6-63195_food-wallpaper-foods-wallpaper-hd.jpeg');
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,35 +190,108 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 .new h3 {
+  color: #2b2e35;
   font-size: 2rem;
   font-family: 'Hachi Maru Pop', cursive;
-  padding: 0 2rem .25rem;
+  padding: 0 2rem 0.25rem;
   border-bottom: 1px solid #5cbc96;
 }
 h3 .fa-stopwatch {
- color: #4fb68d;
+  color: #4fb68d;
 }
 .selection {
- font-size: 1.25rem;
- margin: 2rem;
+  font-size: 1.25rem;
+  margin: 2rem 0;
 }
 .selection span {
- margin: 0 1rem;
- text-transform: capitalize;
- cursor: pointer;
- transition: ease 400ms;
+  margin: 0 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: ease 400ms;
+  color: #2b2e35;
 }
 .selection span:hover {
- color: #4fb68d;
- transition: ease 400ms;
+  color: #4fb68d; Meat $45.00 
+  transition: ease 400ms;
 }
 .selection .active {
- border: 1px dashed #4fb68d;
+  border: 1px dashed #4fb68d;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: #4fb68d;
+}
+.products {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1.5rem;
+  width: 90vw;
+}
+.container {
+  position: relative;
+  cursor: pointer;
+  height: 37rem;
+  display: flex;
+  flex-direction: column;
+}
+.action {
+  height: 27rem;
+  background-image: url('1-300x300.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+  transition: ease 400ms;
+  position: relative;
+}
+.action div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.action i {
+  color: #4fb68d;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: .5rem;
+  display: none;
+  transition: ease 400ms;
+}
+.container:hover .action i {
+  display: initial;
+  transition: ease 400ms;
+}
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.name span,
+.name i {
+  color: #2b2e35;
+}
+.rating {
  padding: 1rem;
- border-radius: 1.5rem;
- color: #4fb68d;
+}
+.rating .fa-star{
+ color: black;
+}
+.price {
+  color: #4fb68d;
+  padding: 1rem;
 }
 @media (max-width: 850px) {
   .links a {
@@ -236,6 +307,9 @@ h3 .fa-stopwatch {
 @media (max-width: 768px) {
   .logo {
     font-size: 1.75rem;
+  }
+  .products {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 650px) {
@@ -254,4 +328,17 @@ h3 .fa-stopwatch {
   .offer p {
     font-size: 1.25rem;
   }
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .selection span {
+   font-size: .8rem;
+   margin: .15rem;
+  }
+  .selection .active {
+  border: 1px dashed #4fb68d;
+  padding: .5rem;
+  border-radius: 1.5rem;
+  color: #4fb68d;
+}
 }
