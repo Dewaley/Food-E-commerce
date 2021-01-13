@@ -194,11 +194,12 @@ header {
   margin-bottom: 1.5rem;
 }
 .new h3 {
-  color: #2b2e35;
+  color: white;
   font-size: 2rem;
   font-family: 'Hachi Maru Pop', cursive;
   padding: 0 2rem 0.25rem;
   border-bottom: 1px solid #5cbc96;
+  margin-bottom: 1rem;
 }
 h3 .fa-stopwatch {
   color: #4fb68d;
@@ -212,7 +213,7 @@ h3 .fa-stopwatch {
   text-transform: capitalize;
   cursor: pointer;
   transition: ease 400ms;
-  color: #2b2e35;
+  color: white;
 }
 .selection span:hover {
   color: #4fb68d;
@@ -227,7 +228,7 @@ h3 .fa-stopwatch {
 .products {
   display: grid;
   align-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-row-gap: 1rem;
   grid-column-gap: 1.5rem;
   width: 90vw;
