@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+html {
+ font-size: 10px;
+}
+body {
+ overflow-x: hidden;
+ font-family: 'Comfortaa', cursive;
+ position: relative;
+}
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 1rem;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+.logo {
+ font-family: 'Hachi Maru Pop', cursive;
+ font-size: 2rem;
+}
+.links {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.links a {
+ font-size: 1.5rem;
+ text-transform: uppercase;
+ margin: 0 1rem;
+ text-decoration: none;
+ color: black;
+ border-bottom: 1px solid transparent;
+ transition: ease 400ms;
+}
+.links a:hover {
+ border-bottom: 1px solid #4fb68d;
+ transition: ease 400ms;
+}
+.search {
+ border: 1px solid #4fb68d;
+ border-radius: 3rem;
+ padding: 1rem;
+}
+.search input {
+ font-size: 1.5rem;
+ border: none;
+ outline: none;
+ background-color: transparent;
+}
+.search .fas {
+ font-size: 1.5rem;
+ cursor: pointer;
+}
+.carttemplate {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+.mycart {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.5rem;
+}
+.mycart .money {
+ color: #4fb68d;
+}
+.cart {
+ font-size: 2rem;
+ color: white;
+ border: 1px solid #4fb68d;
+ padding: 1rem;
+ border-radius: 50%;
+ position: relative;
+}
+.cart .fas {
+ color: black;
+}
+.countcart {
+ position: absolute;
+ right: 0;
+ top: 2%;
+ font-size: 1rem;
+ min-width: 1.2rem;
+ max-width: 1.2rem;
+ min-height: 1.2rem;
+ max-height: 1.2rem;
+ padding: .25rem;
+ background-color: #4fb68d;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+}
+.side-options {
+ position: fixed;
+ left: 0;
+ top: 50%;
+ transform: translateY(-50%);
+ z-index: 4;
+}
+.side-options li {
+ background-color: #ef424d;
+ list-style-type: none;
+ padding: 2rem;
+}
+@media (max-width:850px) {
+ .links a {
+  font-size: 1.2rem;
+ }
+ .search {
+  font-size: 1.2rem;
+ }
+ .carttemplate {
+  display: none;
+ }
+}
+@media (max-width: 768px){
+ .logo {
+  font-size: 1.75rem
+ }
+}
+@media (max-width:650px) {
+ .links {
+  display: none;
+ }
+} 
