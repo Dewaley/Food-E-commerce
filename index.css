@@ -5,6 +5,7 @@
  box-sizing: border-box;
  padding: 0;
  margin: 0;
+ color: white;
 }
 html {
  font-size: 10px;
@@ -18,7 +19,7 @@ header {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 0 1rem;
+ padding: 1rem;
  position: absolute;
  top: 0;
  left: 0;
@@ -38,7 +39,7 @@ header {
  text-transform: uppercase;
  margin: 0 1rem;
  text-decoration: none;
- color: black;
+ color: #5cbc96;
  border-bottom: 1px solid transparent;
  transition: ease 400ms;
 }
@@ -86,7 +87,7 @@ header {
  position: relative;
 }
 .cart .fas {
- color: black;
+ color: white;
 }
 .countcart {
  position: absolute;
@@ -112,9 +113,48 @@ header {
  z-index: 4;
 }
 .side-options li {
- background-color: #ef424d;
+ margin: 0;
  list-style-type: none;
- padding: 2rem;
+ font-size: 2rem;
+ display: flex;
+}
+.side-options div {
+ display: flex;
+ cursor: pointer;
+ color: white;
+ justify-content: center;
+ align-items: center;
+ min-width: 4rem;
+ max-width: 4rem;
+ min-height: 4rem;
+ max-height: 4rem;
+ background-color: #4fb68d;
+}
+.side-options span {
+ display: none;
+ background-color: #5cbc96;
+ min-height: 4rem;
+ max-height: 4rem;
+ justify-content: center;
+ align-items: center;
+ padding: 0 1rem;
+}
+.side-options li:hover span {
+ display: flex;
+}
+.banner {
+ background-image: url('6-63195_food-wallpaper-foods-wallpaper-hd.jpeg');
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 70vh;
+ position: relative;
+}
+.offer {
+ position: absolute;
+ bottom: 3rem;
+ 
 }
 @media (max-width:850px) {
  .links a {
