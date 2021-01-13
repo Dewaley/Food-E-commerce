@@ -24,6 +24,7 @@ header {
  top: 0;
  left: 0;
  right: 0;
+ z-index: 4;
 }
 .logo {
  font-family: 'Hachi Maru Pop', cursive;
@@ -153,8 +154,34 @@ header {
 }
 .offer {
  position: absolute;
- bottom: 3rem;
- 
+ bottom: 10vw;
+ right: 3rem;
+ width: 50vw;
+ text-align: center;
+}
+.offer h3 {
+ font-size: 3rem;
+ font-family: 'Hachi Maru Pop', cursive;
+}
+.offer p {
+ font-size: 2rem;
+ margin-bottom: 1.5rem;
+}
+.offer button {
+ cursor: pointer;
+ border: 2px solid #5cbc96;
+ outline: none;
+ background-color: transparent;
+ font-size: 1.5rem;
+ padding: .5rem;
+ border-radius: 1rem;
+ transition: ease 400ms;
+}
+.offer button:hover {
+ transition: ease 400ms;
+ border: 2px solid white;
+ background-color: white;
+ color: #5cbc96;
 }
 @media (max-width:850px) {
  .links a {
