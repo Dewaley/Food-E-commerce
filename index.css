@@ -51,6 +51,7 @@ a {
   background-color: transparent;
   border-radius: 50%;
   transition: ease 400ms;
+  z-index: 5;
 }
 .toTop:hover {
   background-color: #4fb68d;
