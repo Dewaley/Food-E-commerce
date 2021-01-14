@@ -9,7 +9,7 @@ window.addEventListener('click', (e) => {
   let checkSide = e.target.classList.contains('aside-right')
   let checkClicked = e.target.classList.contains('fa-bars')
   if (!checkClicked && !checkSide) {
-    hamburger.classList.toggle('clicked')
-    sideBar.classList.toggle('slide-in')
+    hamburger.classList.remove('clicked')
+    sideBar.classList.remove('slide-in')
   }
 })
