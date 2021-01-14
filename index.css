@@ -33,6 +33,36 @@ li {
 a {
   text-decoration: none;
 }
+.toTop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+  color: #4fb68d;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  font-size: 2rem;
+  min-width: 4rem;
+  max-width: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  border: 1px solid #4fb68d;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: ease 400ms;
+}
+.toTop:hover {
+  background-color: #4fb68d;
+  transition: ease 400ms;
+}
+.toTop:hover .fas {
+  color: white;
+  transition: ease 400ms;
+}
+.toTop .fas {
+  color: #4fb68d;
+}
 header .fa-bars {
   font-size: 2rem;
   display: none !important;
