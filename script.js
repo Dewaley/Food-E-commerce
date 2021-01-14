@@ -23,3 +23,6 @@ function scrollFunction() {
     Top.style.display = "none"
   }
 }
+Top.addEventListener('click', () => {
+  window.scroll(0,0)
+})
